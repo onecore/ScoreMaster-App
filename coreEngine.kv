@@ -1,0 +1,62 @@
+
+
+
+
+<coreEngineStyle>:
+    canvas:
+        Rectangle:
+            pos: 0,0
+            size: 480,800
+            source: "background.png"
+
+    FloatLayout:
+        Button:
+            id: settings_button
+            background_normal: "settings.png"
+            background_down: "settings.png"
+            size_hint: None,None
+            pos: 370,697
+            height: 64
+            width: 64
+            on_press: root.show_Settings_Obj()
+
+        Button:
+            id: start_button
+            background_normal: "start-button.png"
+            background_down: "start-button.png"
+            size_hint: None,None
+            height: 40
+            width: 120
+            pos: 195,163
+            on_press: root.show_Start_Obj()
+
+        # Start of Category Buttons
+
+        Button:
+            id: pool_cat
+            background_normal: "images/pool.png"
+            background_down: "images/poolhover.png"
+            width: 112
+            height: 65
+            pos: 73,323
+
+        Button:
+            id: bball_cat
+            background_normal: "images/bball.png"
+            background_down: "images/bballhover.png"
+            width: 112
+            height: 65
+            pos: 196,323
+
+        Button:
+            id: chess_cat
+            background_normal: "images/chess.png"
+            background_down: "images/chesshover.png"
+            width: 112
+            height: 65
+            pos: 318,323
+
+
+
+        # End of Category Buttons
+
